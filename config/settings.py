@@ -45,6 +45,11 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = "Chat.CustomUser"
 
 
+# set in create userpage commit pls
+# LOGIN_REDIRECT_URL = "logout-page"
+# LOGOUT_REDIRECT_URL = "login-page"
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

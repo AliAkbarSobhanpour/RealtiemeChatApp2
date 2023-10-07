@@ -1,0 +1,19 @@
+<style>
+    .errorlist{
+        color:red;
+    }
+
+</style>
+<form method="post">
+    {% csrf_token %}
+    {{form.errors}}
+    {{form.username.label}}: {{form.username}}<br><br>
+    {{form.username.help_text}}<br><br>
+    {{form.email.label}}: {{form.email}}<br><br>
+    {{form.email.help_text}}<br><br>
+    {{form.password1.label}}: {{form.password1}}<br><br>
+    {{form.password1.help_text}}<br><br>
+    {{form.password2.label}}: {{form.password2}}<br><br>
+    {{form.password2.help_text}}<br><br>
+        <button type="submit">Register</button>
+    </form>
